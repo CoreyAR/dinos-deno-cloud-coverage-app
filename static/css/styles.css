@@ -1,0 +1,380 @@
+/* Hastily modified from this code pen to randomize high density cloud formations
+https://codepen.io/camstephensdomo/pen/PVqpaP */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+}
+
+#fog-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  pointer-events: none;
+}
+#fog-1:before, #fog-1:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 300%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: repeat-x;
+}
+#fog-1:before {
+  background-image: url("https://res.cloudinary.com/dkr52htco/image/upload/v1536173269/fog-1.png");
+  animation: drift 60s linear 0s infinite;
+}
+#fog-1:after {
+  background-image: url("https://res.cloudinary.com/dkr52htco/image/upload/v1536173269/fog-2.png");
+  animation: drift 25s linear 0s infinite;
+}
+@keyframes drift {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-200vw, 0, 0);
+  }
+}
+
+#fog-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  pointer-events: none;
+}
+#fog-2:before, #fog-2:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 400%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: repeat-x;
+}
+#fog-2:before {
+  background-image: url("https://res.cloudinary.com/dkr52htco/image/upload/v1536173269/fog-1.png");
+  animation: drift 50s linear 0s infinite;
+}
+#fog-2:after {
+  background-image: url("https://res.cloudinary.com/dkr52htco/image/upload/v1536173269/fog-2.png");
+  animation: drift 30s linear 0s infinite;
+}
+@keyframes drift {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-300vw, 0, 0);
+  }
+}
+
+#fog-3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  pointer-events: none;
+}
+#fog-3:before, #fog-3:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 250%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: repeat-x;
+}
+#fog-3:before {
+  background-image: url("https://res.cloudinary.com/dkr52htco/image/upload/v1536173269/fog-1.png");
+  animation: drift 90s linear 0s infinite;
+}
+#fog-3:after {
+  background-image: url("https://res.cloudinary.com/dkr52htco/image/upload/v1536173269/fog-2.png");
+  animation: drift 20s linear 0s infinite;
+}
+@keyframes drift {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-300vw, 0, 0);
+  }
+}
+
+#fog-4 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  pointer-events: none;
+}
+#fog-4:before, #fog-4:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 400%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: repeat-x;
+}
+#fog-4:before {
+  background-image: url("https://res.cloudinary.com/dkr52htco/image/upload/v1536173269/fog-1.png");
+  animation: drift 80s linear 0s infinite;
+}
+#fog-4:after {
+  background-image: url("https://res.cloudinary.com/dkr52htco/image/upload/v1536173269/fog-2.png");
+  animation: drift 50s linear 0s infinite;
+}
+@keyframes drift {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-300vw, 0, 0);
+  }
+}
+#fog-5 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  pointer-events: none;
+}
+#fog-5:before, #fog-5:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 200%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: repeat-x;
+}
+#fog-5:before {
+  background-image: url("https://res.cloudinary.com/dkr52htco/image/upload/v1536173269/fog-1.png");
+  animation: drift 50s linear 0s infinite;
+}
+#fog-5:after {
+  background-image: url("https://res.cloudinary.com/dkr52htco/image/upload/v1536173269/fog-2.png");
+  animation: drift 30s linear 0s infinite;
+}
+@keyframes drift {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-250vw, 0, 0);
+  }
+}
+
+#fog-6 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  pointer-events: none;
+}
+#fog-6:before, #fog-6:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 800%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: repeat-x;
+}
+#fog-6:before {
+  background-image: url("https://res.cloudinary.com/dkr52htco/image/upload/v1536173269/fog-1.png");
+  animation: drift 60s linear 0s infinite;
+}
+#fog-6:after {
+  background-image: url("https://res.cloudinary.com/dkr52htco/image/upload/v1536173269/fog-2.png");
+  animation: drift 25s linear 0s infinite;
+}
+@keyframes drift {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-800vw, 0, 0);
+  }
+}
+#fog-7 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  pointer-events: none;
+}
+#fog-7:before, #fog-7:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 400%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: repeat-x;
+}
+#fog-7:before {
+  background-image: url("https://res.cloudinary.com/dkr52htco/image/upload/v1536173269/fog-1.png");
+  animation: drift 20s linear 0s infinite;
+}
+#fog-7:after {
+  background-image: url("https://res.cloudinary.com/dkr52htco/image/upload/v1536173269/fog-2.png");
+  animation: drift 30s linear 0s infinite;
+}
+@keyframes drift {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-300vw, 0, 0);
+  }
+}
+
+#fog-8 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  pointer-events: none;
+}
+#fog-8:before, #fog-8:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 200%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: repeat-x;
+}
+#fog-8:before {
+  background-image: url("https://res.cloudinary.com/dkr52htco/image/upload/v1536173269/fog-1.png");
+  animation: drift 60s linear 0s infinite;
+}
+#fog-8:after {
+  background-image: url("https://res.cloudinary.com/dkr52htco/image/upload/v1536173269/fog-2.png");
+  animation: drift 30s linear 0s infinite;
+}
+@keyframes drift {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-200vw, 0, 0);
+  }
+}
+
+#fog-9 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  pointer-events: none;
+}
+#fog-9:before, #fog-9:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 300%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: repeat-x;
+}
+#fog-9:before {
+  background-image: url("https://res.cloudinary.com/dkr52htco/image/upload/v1536173269/fog-1.png");
+  animation: drift 30s linear 0s infinite;
+}
+#fog-9:after {
+  background-image: url("https://res.cloudinary.com/dkr52htco/image/upload/v1536173269/fog-2.png");
+  animation: drift 30s linear 0s infinite;
+}
+@keyframes drift {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-300vw, 0, 0);
+  }
+}
+
+#fog-10 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  pointer-events: none;
+}
+#fog-10:before, #fog-10:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 400%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: repeat-x;
+}
+#fog-10:before {
+  background-image: url("https://res.cloudinary.com/dkr52htco/image/upload/v1536173269/fog-1.png");
+  animation: drift 50s linear 0s infinite;
+}
+#fog-10:after {
+  background-image: url("https://res.cloudinary.com/dkr52htco/image/upload/v1536173269/fog-2.png");
+  animation: drift 30s linear 0s infinite;
+}
+@keyframes drift {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-300vw, 0, 0);
+  }
+}
