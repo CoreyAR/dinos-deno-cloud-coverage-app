@@ -1,0 +1,5 @@
+{
+  "entryPoint": "./mod.ts",
+  "cwd": "./src",
+  "excludes": []
+}

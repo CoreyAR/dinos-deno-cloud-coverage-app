@@ -15,6 +15,15 @@ Requires setting a [climacell](https://developer.climacell.co/v3/docs) api key t
 $ deno run --allow-net --allow-read --allow-env mod.ts
 ```
 
+### Development
+This project uses [drun](https://deno.land/x/drun/) to automatically restart.
+
+[Config](./drun.json)
+```
+$ drun
+Serving on port 8000
+```
+
 ### Dependencies
 
 [Oak](https://github.com/oakserver/oak)
