@@ -1,4 +1,4 @@
-// @deno-types="../types/react/index.d.ts"
+// @deno-types="../../types/react/index.d.ts"
 import React from "https://dev.jspm.io/react";
 
 export interface AppProps {
@@ -6,6 +6,7 @@ export interface AppProps {
     cloudCover: number;
   };
 }
+
 
 const fog = (level: number) => {
   let fogs = [];
@@ -17,6 +18,7 @@ const fog = (level: number) => {
   }
   return fogs;
 };
+
 
 const View = ({ data }: AppProps) => {
   const { cloudCover } = data;

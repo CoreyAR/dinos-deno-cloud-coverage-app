@@ -1,6 +1,6 @@
-// @deno-types="../types/react/index.d.ts"
+// @deno-types="../../types/react/index.d.ts"
 import React from "https://dev.jspm.io/react";
-import { ReactDOMServer } from "../deps.ts";
+import { ReactDOMServer } from "../../deps.ts";
 import View, { AppProps } from "./view.tsx";
 
 export default (props: AppProps) =>
