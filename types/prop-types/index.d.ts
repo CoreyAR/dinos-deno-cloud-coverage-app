@@ -35,7 +35,8 @@ export type IsOptional<T> = undefined extends T ? true : false;
 
 export type RequiredKeys<V> = {
   [K in keyof V]-?: Exclude<V[K], undefined> extends Validator<infer T>
-    ? IsOptional<T> extends true ? never : K : never;
+    ? IsOptional<T> extends true ? never : K
+    : never;
 }[keyof V];
 export type OptionalKeys<V> = Exclude<keyof V, RequiredKeys<V>>;
 export type InferPropsInner<V> = { [K in keyof V]-?: InferType<V[K]> };
@@ -60,7 +61,8 @@ export interface Requireable<T> extends Validator<T | undefined | null> {
 export type ValidationMap<T> = { [K in keyof T]?: Validator<T[K]> };
 
 export type InferType<V> = V extends Validator<infer T> ? T : any;
-export type InferProps<V> = InferPropsInner<Pick<V, RequiredKeys<V>>>
+export type InferProps<V> =
+  & InferPropsInner<Pick<V, RequiredKeys<V>>>
   & Partial<InferPropsInner<Pick<V, OptionalKeys<V>>>>;
 
 export const any: Requireable<any>;

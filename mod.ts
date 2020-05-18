@@ -1,9 +1,4 @@
-import App from "./src/index.ts";
-
-async function main() {
-  console.log("Serving on port 8000");
-  await App.listen({ port: 8000 });
-}
+import main from "./src/index.ts";
 
 if (import.meta.main) {
   try {
@@ -13,4 +8,3 @@ if (import.meta.main) {
     Deno.exit(1);
   }
 }
-

@@ -26,7 +26,5 @@ Serving on port 8000
 
 ### Dependencies
 
-[Oak](https://github.com/oakserver/oak)
-
 [React](https://github.com/facebook/react)
 

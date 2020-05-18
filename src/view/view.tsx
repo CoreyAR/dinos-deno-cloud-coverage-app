@@ -7,7 +7,6 @@ export interface AppProps {
   };
 }
 
-
 const fog = (level: number) => {
   let fogs = [];
   while (fogs.length < level) {
@@ -18,7 +17,6 @@ const fog = (level: number) => {
   }
   return fogs;
 };
-
 
 const View = ({ data }: AppProps) => {
   const { cloudCover } = data;
