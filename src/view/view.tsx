@@ -21,12 +21,7 @@ const fog = (level: number) => {
 const View = ({ data }: AppProps) => {
   const { cloudCover } = data;
   return (
-    <div style={{
-      height: "100vh",
-      width: "100vw",
-      backgroundImage: "url(../static/images/sunny-dino.jpeg)",
-      backgroundSize: "cover",
-    }}>
+    <div className="dino">
       {fog(Math.round(cloudCover / 10))}
     </div>
   );

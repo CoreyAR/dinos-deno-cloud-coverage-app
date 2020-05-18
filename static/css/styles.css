@@ -11,6 +11,13 @@ body {
   background-color: black;
 }
 
+.dino {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(/static/images/sunny-dino.jpeg);
+  background-size: cover;
+}
+
 #fog-1 {
   position: absolute;
   top: 0;
