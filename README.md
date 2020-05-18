@@ -18,13 +18,14 @@ $ deno run --allow-net --allow-read --allow-env mod.ts
 ### Development
 This project uses [drun](https://deno.land/x/drun/) to automatically restart.
 
-[Config](./drun.json)
+[config](./drun.json)
 ```
 $ drun
 Serving on port 8000
 ```
 
 ### Dependencies
+Deps are declared and imported from `deps.ts`
 
 [React](https://github.com/facebook/react)
 
